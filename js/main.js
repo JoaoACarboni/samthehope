@@ -40,16 +40,15 @@ const CONFIG = {
     ["Como funciona o suporte da Sam The Hope?", "Você conta com capacitação antes da entrega das maletas, treinamento mensal com a equipe, garantia de 1 ano nas peças e material de apoio para as vendas."],
     ["Como posso entrar em contato com a marca?", "Pelo WhatsApp ou pelo Instagram, nos botões da seção de contato."]
   ],
-  /* Imagens: nome do espaço (data-slot) -> arquivo na pasta images/.
-     Deixe "" para manter o espaço vazio. Texto alternativo em alt. */
+  /* Imagens dos espaços com data-slot -> arquivo na pasta images/.
+     Deixe src "" para manter o espaço vazio. O logotipo NÃO fica aqui:
+     ele é uma tag <img> direta no index.html (cabeçalho e rodapé). */
   images: {
-    "logotipo":        { src: "images/logo.png",          alt: "Logotipo Sam The Hope" },
-    "logotipo-rodape": { src: "images/logo.png",          alt: "Logotipo Sam The Hope" },
-    "hero":            { src: "images/hero.jpg",          alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" },
-    "institucional":   { src: "images/institucional.jpg", alt: "Semijoias e identidade da Sam The Hope" },
-    "consignado-1":    { src: "", alt: "" },
-    "consignado-2":    { src: "", alt: "" },
-    "consignado-3":    { src: "", alt: "" },
+    "hero":          { src: "images/hero.jpg",          alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" },
+    "institucional": { src: "images/institucional.jpg", alt: "Semijoias e identidade da Sam The Hope" },
+    "consignado-1":  { src: "", alt: "" },
+    "consignado-2":  { src: "", alt: "" },
+    "consignado-3":  { src: "", alt: "" },
     "galeria-1": { src: "", alt: "" }, "galeria-2": { src: "", alt: "" }, "galeria-3": { src: "", alt: "" },
     "galeria-4": { src: "", alt: "" }, "galeria-5": { src: "", alt: "" }, "galeria-6": { src: "", alt: "" }
   }
