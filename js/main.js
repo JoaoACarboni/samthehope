@@ -41,11 +41,10 @@ const CONFIG = {
     ["Como posso entrar em contato com a marca?", "Pelo WhatsApp ou pelo Instagram, nos botões da seção de contato."]
   ],
   /* Imagens dos espaços com data-slot -> arquivo na pasta images/.
-     Deixe src "" para manter o espaço vazio. O logotipo NÃO fica aqui:
-     ele é uma tag <img> direta no index.html (cabeçalho e rodapé). */
+     Deixe src "" para manter o espaço vazio.
+     Não ficam aqui (são tags <img> diretas no index.html): o logotipo e a foto institucional. */
   images: {
-    "hero":          { src: "images/hero.jpg",          alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" },
-    "institucional": { src: "images/institucional.jpg", alt: "Semijoias e identidade da Sam The Hope" },
+    "hero":          { src: "images/hero.jpg", alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" },
     "consignado-1":  { src: "", alt: "" },
     "consignado-2":  { src: "", alt: "" },
     "consignado-3":  { src: "", alt: "" },
