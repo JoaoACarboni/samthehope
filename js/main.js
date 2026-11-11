@@ -2,8 +2,8 @@
 const CONFIG = {
   links: {
     form: "https://forms.google.com/",            // TROCAR pelo Google Forms oficial
-    wa:   "https://wa.me/5500000000000?text=" + encodeURIComponent("Olá! Quero saber mais sobre ser revendedora Sam The Hope."), // TROCAR pelo número (DDI+DDD+número)
-    ig:   "https://www.instagram.com/"             // TROCAR pelo perfil oficial
+    wa:   "https://wa.me/554391115160?text=" + encodeURIComponent("Olá! Quero saber mais sobre ser revendedora Sam The Hope."), // WhatsApp oficial (DDI+DDD+número)
+    ig:   "https://www.instagram.com/samthehopejoias/"  // perfil oficial
   },
   text: {
     heroTitle: "Sua oportunidade de empreender com beleza, liberdade e propósito!",
