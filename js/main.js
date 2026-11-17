@@ -8,8 +8,6 @@ const CONFIG = {
   text: {
     heroTitle: "Sua oportunidade de empreender com beleza, liberdade e propósito!",
     heroText:  "Faça parte da Sam The Hope! Seja uma de nossas revendedoras e descubra uma maneira prática de conquistar sua independência financeira, trabalhando com semijoias e contando com o apoio de uma marca que acredita no seu potencial.",
-    about1:    "A Sam The Hope é uma marca de semijoias feita para mulheres que gostam de se sentir bonitas, confiantes e únicas. Cada peça é pensada para valorizar a beleza e a autoestima de quem a usa.",
-    about2:    "Além de joias que encantam, oferecemos a oportunidade de empreender com proximidade e acolhimento: nossa rede de revendedoras cresce com o apoio da equipe em cada etapa.",
     howLead:   "Um modelo simples, sem investimento inicial: as peças são 100% consignadas e você conta com o apoio da marca desde o primeiro passo.",
     howNote:   "As condições específicas do consignado (prazos, acerto e regras) são apresentadas pela equipe da Sam The Hope no contato após o cadastro."
   },
@@ -42,14 +40,9 @@ const CONFIG = {
   ],
   /* Imagens dos espaços com data-slot -> arquivo na pasta images/.
      Deixe src "" para manter o espaço vazio.
-     Não ficam aqui (são tags <img> diretas no index.html): o logotipo e a foto institucional. */
+     As demais imagens (logotipo, institucional, kit, mostruário e premiações) são tags <img> diretas no index.html. */
   images: {
-    "hero":          { src: "images/hero.jpg", alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" },
-    "consignado-1":  { src: "", alt: "" },
-    "consignado-2":  { src: "", alt: "" },
-    "consignado-3":  { src: "", alt: "" },
-    "galeria-1": { src: "", alt: "" }, "galeria-2": { src: "", alt: "" }, "galeria-3": { src: "", alt: "" },
-    "galeria-4": { src: "", alt: "" }, "galeria-5": { src: "", alt: "" }, "galeria-6": { src: "", alt: "" }
+    "hero": { src: "images/hero.jpg", alt: "Revendedora Sam The Hope apresentando a maleta de semijoias" }
   }
 };
 /* =========================================================================== */
@@ -62,7 +55,7 @@ $("#year").textContent = new Date().getFullYear();
 $("#steps").innerHTML = CONFIG.steps.map(([t,d]) =>
   `<div class="step reveal"><h3>${t}</h3><p>${d}</p></div>`).join("");
 $("#cards").innerHTML = CONFIG.benefits.map(([i,t,d]) =>
-  `<div class="card reveal"><div class="ic" aria-hidden="true">${i}</div><h3>${t}</h3><p>${d}</p></div>`).join("");
+  `<div class="card reveal"><div class="ic" aria-hidden="true"><span>${i}</span></div><h3>${t}</h3><p>${d}</p></div>`).join("");
 $("#faq-list").innerHTML = CONFIG.faq.map(([q,a]) =>
   `<details class="reveal"><summary>${q}</summary><p>${a}</p></details>`).join("");
 
@@ -84,3 +77,13 @@ document.querySelectorAll("[data-slot]").forEach(slot => {
   img.onload = () => { slot.classList.add("has-img"); slot.prepend(img); };
   img.src = cfg.src; // se o arquivo não existir, o espaço continua vazio
 });
+
+/* Celular: mostra a barra fixa "Quero me cadastrar" depois que o início sai da tela
+   e a esconde quando a seção final de cadastro está visível */
+const bar = $("#mBar"), heroEl = $("#inicio"), ctaEl = $(".cta");
+if (bar && "IntersectionObserver" in window) {
+  let pastHero = false, ctaVisible = false;
+  const update = () => document.body.classList.toggle("show-bar", pastHero && !ctaVisible);
+  new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting && e.boundingClientRect.top < 0; update(); }).observe(heroEl);
+  new IntersectionObserver(([e]) => { ctaVisible = e.isIntersecting; update(); }).observe(ctaEl);
+}

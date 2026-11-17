@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sam The Hope | Seja uma revendedora de semijoias</title>
-<meta name="description" content="Seja revendedora Sam The Hope: semijoias 100% consignadas, sem investimento inicial, com capacitação, garantia de 1 ano e suporte da marca.">
+<meta name="description" content="Seja revendedora Sam The Hope: semijoias 100% consignadas, sem investimento inicial, com capacitação e suporte da marca.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -22,8 +22,10 @@
     <nav id="menu" aria-label="Principal">
       <ul>
         <li><a href="#inicio">Início</a></li>
+        <li><a href="#marca">Nosso propósito</a></li>
         <li><a href="#como-funciona">Como funciona</a></li>
         <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#premiacoes">Premiações</a></li>
         <li><a href="#faq">Perguntas frequentes</a></li>
         <li><a href="#contato">Contato</a></li>
         <li><a class="btn btn-gold m-cta" data-link="form" href="#">Quero me cadastrar</a></li>
@@ -45,23 +47,45 @@
         <a class="btn btn-gold" data-link="form" href="#">Quero me cadastrar</a>
         <a class="btn btn-line" href="#como-funciona">Saiba como funciona</a>
       </div>
+      <ul class="chips" aria-label="Destaques">
+        <li>100% consignado</li>
+        <li>Sem investimento inicial</li>
+      </ul>
     </div>
     <!-- IMAGEM: destaque (Hero), proporção 4:5, vertical -->
-    <div class="slot r-4-5 reveal" data-slot="hero"><span>Imagem principal (Hero) · 4:5 vertical</span></div>
+    <div class="hero-frame reveal">
+      <div class="slot r-4-5" data-slot="hero"><span>Imagem principal (Hero) · 4:5 vertical</span></div>
+    </div>
   </div>
 </section>
 
 <section class="about" id="marca">
   <div class="wrap">
     <!-- FOTO INSTITUCIONAL (proporção 3:4): para trocar, substitua images/institucional.jpg ou altere o src -->
-    <div class="slot r-3-4 has-img reveal">
-      <img src="images/institucional.jpg" alt="Semijoias e identidade da Sam The Hope" width="900" height="1200" loading="lazy">
+    <div class="about-media reveal">
+      <div class="slot r-3-4 has-img">
+        <img src="images/institucional.jpg" alt="Semijoias e identidade da Sam The Hope" width="900" height="1200" loading="lazy">
+      </div>
     </div>
     <div class="reveal">
       <span class="eyebrow">Conheça a Sam The Hope</span>
-      <h2>Brilho, elegância e detalhes que marcam a diferença</h2>
-      <p style="margin-top:20px" data-t="about1"></p>
-      <p data-t="about2"></p>
+      <h2>Nossos valores e nosso propósito</h2>
+      <div class="about-copy">
+        <p class="about-intro">Na SAM THE HOPE, acreditamos que a beleza vai muito além de uma joia. Ela está na autoestima, na independência e na capacidade de transformar vidas.</p>
+        <p>Nossos valores são pautados na honestidade, no respeito, no compromisso, na excelência e na valorização das mulheres.</p>
+        <p>Acreditamos na força da união e no poder de uma comunidade em que mulheres apoiam mulheres, compartilham experiências, crescem juntas e ajudam umas às outras a conquistar seus objetivos.</p>
+        <p>Nosso propósito é proporcionar oportunidades para gerar uma renda extra com significado, realizar sonhos e conquistar independência financeira, sem que isso signifique comprometer ainda mais o nosso precioso tempo ou inverter as prioridades da vida.</p>
+        <div class="order">
+          <p>Acreditamos que existe uma ordem que deve ser preservada:</p>
+          <ol>
+            <li><span>1º</span>Deus</li>
+            <li><span>2º</span>Família</li>
+            <li><span>3º</span>Trabalho honesto</li>
+          </ol>
+        </div>
+        <p>Queremos mostrar que é possível empreender com propósito, crescer com equilíbrio e prosperar sem abrir mão da fé, da família e dos momentos que realmente importam.</p>
+        <blockquote class="about-signoff"><strong>SAM THE HOPE:</strong> juntas, com propósito, fé e esperança, transformando oportunidades em conquistas.</blockquote>
+      </div>
     </div>
   </div>
 </section>
@@ -74,13 +98,35 @@
       <p class="lead" data-t="howLead"></p>
     </div>
     <div class="steps" id="steps"></div>
-    <!-- IMAGENS: peças, mostruários (maletas) e processo de revenda, 4:5 -->
-    <div class="how-gallery">
-      <div class="slot r-4-5 reveal" data-slot="consignado-1"><span>Mostruário / maleta · 4:5</span></div>
-      <div class="slot r-4-5 reveal" data-slot="consignado-2"><span>Peças · 4:5</span></div>
-      <div class="slot r-4-5 reveal" data-slot="consignado-3"><span>Processo de revenda · 4:5</span></div>
-    </div>
     <p class="note reveal" data-t="howNote"></p>
+  </div>
+</section>
+
+<section class="kit" id="kit">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">O que você recebe</span>
+      <h2>Tudo pronto para você começar a vender</h2>
+      <p class="lead">Você recebe o mostruário com as semijoias e um kit completo com embalagens e materiais da marca, sem investimento inicial.</p>
+    </div>
+    <div class="kit-grid">
+      <figure class="kit-item reveal">
+        <div class="kit-img"><img src="images/mostruario.jpeg" alt="Mostruário com colares, brincos e pulseiras Sam The Hope" width="1086" height="1448" loading="lazy"></div>
+        <figcaption>
+          <span class="kit-num">01</span>
+          <h3>Mostruário de semijoias</h3>
+          <p>Colares, brincos, anéis e pulseiras 100% consignados para você apresentar às suas clientes.</p>
+        </figcaption>
+      </figure>
+      <figure class="kit-item reveal">
+        <div class="kit-img"><img src="images/kit_consultoras.jpeg" alt="Kit da consultora: bolsa, maleta, sacolas, caixas e spray de limpeza" width="1086" height="1448" loading="lazy"></div>
+        <figcaption>
+          <span class="kit-num">02</span>
+          <h3>Kit da consultora</h3>
+          <p>Bolsa e maleta da marca, sacolinhas, caixas para presente e materiais de apoio.</p>
+        </figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -95,20 +141,41 @@
   </div>
 </section>
 
-<section class="gallery" id="galeria">
+<section class="awards" id="premiacoes">
   <div class="wrap">
     <div class="center reveal">
-      <span class="eyebrow">Galeria</span>
-      <h2>Semijoias que valorizam cada detalhe</h2>
+      <span class="eyebrow">Conquistas que inspiram</span>
+      <h2>Premiações por vendas</h2>
+      <p class="lead">Cada conquista merece ser celebrada. Conheça as premiações das faixas de vendas.</p>
     </div>
-    <!-- IMAGENS: fotos reais das peças. Mantenha a proporção de cada espaço -->
-    <div class="grid">
-      <div class="slot g1 reveal" data-slot="galeria-1"><span>Destaque · vertical grande</span></div>
-      <div class="slot g2 reveal" data-slot="galeria-2"><span>Peça · vertical</span></div>
-      <div class="slot g3 reveal" data-slot="galeria-3"><span>Peça · vertical</span></div>
-      <div class="slot g4 reveal" data-slot="galeria-4"><span>Detalhe</span></div>
-      <div class="slot g5 reveal" data-slot="galeria-5"><span>Peça · vertical</span></div>
-      <div class="slot g6 reveal" data-slot="galeria-6"><span>Panorâmica · horizontal</span></div>
+    <div class="awards-grid">
+      <article class="award-card reveal">
+        <span class="award-tag">Faixa 1</span>
+        <img src="images/premio_1000_vendas.jpeg" alt="Premiação da faixa de R$ 1.000 em vendas" width="1086" height="1448" loading="lazy">
+        <h3>R$ 1.000 em vendas</h3>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-tag">Faixa 2</span>
+        <img src="images/premio_2000_vendas.png" alt="Premiação da faixa de R$ 2.000 em vendas" width="258" height="428" loading="lazy">
+        <h3>R$ 2.000 em vendas</h3>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-tag">Faixa 3</span>
+        <img src="images/premio_5000_vendas.jpeg" alt="Premiação da faixa de R$ 5.000 em vendas" width="1312" height="1199" loading="lazy">
+        <h3>R$ 5.000 em vendas</h3>
+      </article>
+    </div>
+    <p class="swipe-hint" aria-hidden="true">Deslize para ver as faixas →</p>
+    <div class="event reveal">
+      <div class="event-img">
+        <img src="images/premiacoes.jpeg" alt="Premiações do evento: mala, bolsas, roupão, copos e outros presentes da Sam The Hope" width="1086" height="1448" loading="lazy">
+      </div>
+      <div class="event-copy">
+        <span class="eyebrow">Premiações do evento</span>
+        <h3>Reconhecimento, valorização e muitos prêmios</h3>
+        <p>Além das faixas de vendas, há premiações mensais, semestrais e anuais para celebrar a dedicação de cada consultora Sam The Hope.</p>
+        <a class="btn btn-gold" data-link="form" href="#">Quero participar</a>
+      </div>
     </div>
   </div>
 </section>
@@ -156,8 +223,9 @@
         <div><strong>Sam The Hope</strong>Semijoias com brilho e elegância</div>
       </div>
       <ul>
-        <li><a href="#inicio">Início</a></li><li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#vantagens">Vantagens</a></li><li><a href="#faq">Perguntas frequentes</a></li><li><a href="#contato">Contato</a></li>
+        <li><a href="#inicio">Início</a></li><li><a href="#marca">Nosso propósito</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li><li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#premiacoes">Premiações</a></li><li><a href="#faq">Perguntas frequentes</a></li><li><a href="#contato">Contato</a></li>
       </ul>
       <div class="contact-actions" style="margin:0">
         <a class="btn btn-ig" data-link="ig" target="_blank" rel="noopener" href="#" style="padding:12px 22px">Instagram</a>
@@ -167,6 +235,11 @@
     <p class="f-copy">© <span id="year"></span> Sam The Hope. Todos os direitos reservados.</p>
   </div>
 </footer>
+
+<!-- Barra fixa de cadastro (só no celular) -->
+<div class="m-bar" id="mBar">
+  <a class="btn btn-gold" data-link="form" href="#">Quero me cadastrar</a>
+</div>
 
 <!-- Bolinhas flutuantes -->
 <div class="float-group">

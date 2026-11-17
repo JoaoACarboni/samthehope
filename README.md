@@ -33,36 +33,30 @@ O link do formulário é usado em todos os botões "Quero me cadastrar". O do Wh
 
 ### 2. Textos
 
-- `text`: título e texto do início, apresentação da marca, texto e aviso da seção "Como funciona".
+- `text`: título e texto do início, texto e aviso da seção "Como funciona". O propósito da marca fica no HTML.
 - `steps`: as 5 etapas do consignado `["Título", "Descrição"]`.
 - `benefits`: cartões de vantagens `["símbolo", "Título", "Descrição"]`.
 - `faq`: perguntas e respostas. As respostas provisórias ("a equipe poderá esclarecer pelo WhatsApp") devem ser trocadas quando as regras do consignado estiverem definidas.
 
 ### 3. Imagens
 
-Coloque os arquivos na pasta `images/` e indique o nome em `CONFIG.images`:
-
-| Espaço (`data-slot`) | Proporção | Onde aparece |
-|---|---|---|
-| `logotipo`, `logotipo-rodape` | 1:1 | Cabeçalho e rodapé |
-| `hero` | 4:5 (vertical) | Imagem principal |
-| `institucional` | 3:4 | "Conheça a Sam The Hope" |
-| `consignado-1` a `3` | 4:5 | Fotos em "Como funciona" |
-| `galeria-1` a `6` | ver abaixo | Galeria de semijoias |
-
-Galeria: `galeria-1` vertical grande (2 colunas × 3 linhas), `galeria-2`, `3` e `5` verticais, `galeria-4` pequena, `galeria-6` horizontal (2 colunas).
-
-Exemplo:
+A imagem principal (Hero) é definida em `CONFIG.images` no `main.js`:
 
 ```js
-"galeria-2": { src: "images/colar-coracao.jpg", alt: "Colar de coração dourado" },
+"hero": { src: "images/hero.jpg", alt: "Descrição da imagem" },
 ```
 
-Enquanto `src` estiver vazio, o espaço aparece com borda tracejada e o texto-guia. Ao receber a imagem, a borda e o texto somem sozinhos.
+As demais são tags `<img>` diretas no `index.html` (basta trocar o arquivo em `images/` mantendo o nome, ou alterar o `src`):
+
+| Arquivo | Onde aparece |
+|---|---|
+| `logo.png` | Cabeçalho e rodapé |
+| `institucional.jpg` | "Nossos valores e nosso propósito" |
+| `mostruario.jpeg`, `kit_consultoras.jpeg` | "O que você recebe" |
+| `premio_1000_vendas.jpeg`, `premio_2000_vendas.png`, `premio_5000_vendas.jpeg` | "Premiações por vendas" (no celular viram carrossel deslizante) |
+| `premiacoes.jpeg` | Destaque "Premiações do evento" |
 
 Dicas: use JPG ou WebP com até cerca de 1600 px no lado maior (idealmente abaixo de 300 KB) e preencha sempre o texto alternativo (`alt`).
-
-Arquivos que já estão em `images/`: `logo.png`, `hero.jpg` (foto da maleta turquesa) e `institucional.jpg` (peça com colagem). Troque por versões finais quando tiver.
 
 ### 4. Cores
 
@@ -90,6 +84,5 @@ Responsivo (celular, tablet e computador), menu móvel, rolagem suave, FAQ em ac
 
 - [ ] Trocar os 3 links em `CONFIG.links`.
 - [ ] Revisar `steps` e `faq` com as condições reais do consignado.
-- [ ] Adicionar fotos reais das peças na galeria e no "Como funciona".
-- [ ] Conferir o texto em "Conheça a Sam The Hope", que é provisório.
+- [ ] Conferir o texto institucional e as imagens antes de publicar.
 - [ ] Opcional: adicionar `og:image` ao `<head>` do `index.html` para prévia ao compartilhar o link.
