@@ -1,7 +1,7 @@
 /* ============ CONFIGURAÇÃO: edite aqui links, textos e condições ============ */
 const CONFIG = {
   links: {
-    form: "https://forms.google.com/",            // TROCAR pelo Google Forms oficial
+    form: "https://docs.google.com/forms/d/e/1FAIpQLScxu19SUr6DkrU0psE0GOBjLX-xjP9yJOhct5E1S0Nf59SO4w/viewform",
     wa:   "https://wa.me/554391115160?text=" + encodeURIComponent("Olá! Quero saber mais sobre ser revendedora Sam The Hope."), // WhatsApp oficial (DDI+DDD+número)
     ig:   "https://www.instagram.com/samthehopejoias/"  // perfil oficial
   },
